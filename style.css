@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h3, p {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+h3 {
+    font-weight: 600;
+}
+
+p {
+    font-weight: 500;
+}
+
+body {
+    background-color: hsl(210, 46%, 95%);
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.card-a {
+    flex-wrap: wrap;
+    display: flex;
+    flex-basis: 77%;
+}
+
+.card-b {
+    border: 1px solid hsl(0, 0%, 100%);
+    flex-basis: 23%;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 15px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+/* .hero_Card {
+    display: flex;
+} */
+
+main {
+    display: flex;
+    max-width: 1440px;
+    margin: 100px auto;
+}
+
+main p {
+    opacity: 0.7;
+}
+
+main img {
+    border-radius: 3rem;
+    box-shadow: 0px 0px 0px 2px rgb(137 99 199);
+}
+
+/* .a img, .b img {
+    border: 2px solid hsl(263, 55%, 52%);
+}  */
+
+.main-card, .card-b .card-profile {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding-bottom: 1.0rem;
+}
+
+.main-card p, .card-profile p {
+    opacity: 0.5;
+}
+
+.card-profile_set {
+    padding-top: 1.5rem;
+    line-height: 1.6;
+}
+
+.a, .b, .c, .d {
+    border-radius: 10px;
+    margin: 15px;
+    padding: 30px;
+    box-shadow: 37px 41px 36px -38px #8080808a;
+}
+
+.b, .c {
+    flex-basis: calc(33.33% - 30px);
+}
+
+.a {
+    background: hsl(263, 55%, 52%) url(./images/bg-pattern-quotation.svg) no-repeat top 10px right 100px;
+    border: 1px solid  hsl(263, 55%, 52%);
+}
+
+.b {
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(0, 0%, 100%);
+}
+
+.c {
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 100%);   
+}
+
+.d {
+    background-color: hsl(219, 29%, 14%);
+}
+
+.a, .d {
+    flex-basis: calc(66.6% - 30px);
+    color: hsl(0, 0%, 100%);
+}
+
+/* .c {
+    flex-basis: calc(33.33% - 30px);
+} */
+
+@media (max-width: 600px) {
+    .card, .card-a {
+        display: block;
+    }
+
+    .a, .b, .c, .d {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 925px) and (min-width: 600px) {
+    .card {
+        flex-wrap: wrap;
+    }
+
+    .card-b {
+        flex-basis: 70%;
+    }
+
+    .a, .d {
+        flex-basis: auto;
+    }
+
+    .b, .c {
+        flex-basis: calc(50% - 30px);
+    }
+}
